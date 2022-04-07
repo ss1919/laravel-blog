@@ -22,7 +22,7 @@
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="../../index3.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Home</a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
                 <a href="#" class="nav-link">Contact</a>
@@ -195,12 +195,6 @@
                                     <p>Создать категорию</p>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="../../index3.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Dashboard v3</p>
-                                </a>
-                            </li>
                         </ul>
                     </li>
 
@@ -279,6 +273,11 @@
                             {{ session('success') }}
                         </div>
                     @endif
+                    @if (session()->has('error'))
+                        <div class="alert alert-danger">
+                            {{ session('error') }}
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>
@@ -313,6 +312,11 @@
             $(this).closest('.has-treeview').addClass('menu-open');
         }
     });
+
+    $(document).ready(function () {
+        bsCustomFileInput.init();
+    });
+
 </script>
 </body>
 </html>

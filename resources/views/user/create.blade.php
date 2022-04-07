@@ -77,7 +77,7 @@
                 </div>
             </form>
 
-            <a href="#" class="text-center">I have an account, login</a>
+            <a href="{{ route('login') }}" class="text-center">I have an account, login</a>
         </div>
         <!-- /.form-box -->
     </div><!-- /.card -->

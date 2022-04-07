@@ -1,0 +1,62 @@
+<svg width="606" height="200.35460487117935" viewBox="0 0 406 100.35460487117935" xmlns="http://www.w3.org/2000/svg">
+	<defs id="SvgjsDefs10340">
+		<linearGradient id="SvgjsLinearGradient10347">
+			<stop id="SvgjsStop10348" stop-color="#2d388a" offset="0">
+			</stop>
+			<stop id="SvgjsStop10349" stop-color="#00aeef" offset="1">
+			</stop>
+		</linearGradient>
+		<linearGradient id="SvgjsLinearGradient10350">
+			<stop id="SvgjsStop10351" stop-color="#2d388a" offset="0">
+			</stop>
+			<stop id="SvgjsStop10352" stop-color="#00aeef" offset="1">
+			</stop>
+		</linearGradient>
+		<linearGradient id="SvgjsLinearGradient10353">
+			<stop id="SvgjsStop10354" stop-color="#2d388a" offset="0">
+			</stop>
+			<stop id="SvgjsStop10355" stop-color="#00aeef" offset="1">
+			</stop>
+		</linearGradient>
+	</defs>
+	<g id="SvgjsG10341" featurekey="symbolFeature-0" transform="matrix(1.2592966846462978,0,0,1.2592966846462978,-15.607723176759913,-13.110538100905758)" fill="url(#SvgjsLinearGradient10347)">
+		<g xmlns="http://www.w3.org/2000/svg">
+			<g>
+				<polygon points="54.644,56.782 35.043,56.782 29.789,76.381 49.394,76.381   ">
+				</polygon>
+			</g>
+			<g>
+				<polygon points="29.789,76.381 16.071,76.381 12.394,90.102 26.115,90.102   ">
+				</polygon>
+			</g>
+			<g>
+				<polygon points="72.04,43.063 58.319,43.063 54.644,56.782 68.363,56.782   ">
+				</polygon>
+			</g>
+			<g>
+				<polygon points="60.892,33.458 51.288,33.458 48.716,43.063 58.319,43.063   ">
+				</polygon>
+			</g>
+			<g>
+				<polygon points="78.988,17.134 69.384,17.134 66.81,26.739 76.416,26.739   ">
+				</polygon>
+			</g>
+			<g>
+				<polygon points="37.616,47.18 28.013,47.18 25.438,56.782 35.043,56.782   ">
+				</polygon>
+			</g>
+			<g>
+				<polygon points="87.511,10.411 80.79,10.411 78.988,17.134 85.71,17.134   ">
+				</polygon>
+			</g>
+			<g>
+				<polygon points="80.562,36.341 73.842,36.341 72.04,43.063 78.762,43.063   ">
+				</polygon>
+			</g>
+			<g>
+				<polygon points="53.089,26.735 46.37,26.735 44.565,33.458 51.288,33.458   ">
+				</polygon>
+			</g>
+		</g>
+	</g>
+</svg>

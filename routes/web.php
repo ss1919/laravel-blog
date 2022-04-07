@@ -5,7 +5,11 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Admin\TagController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CategoryIndexController;
+use App\Http\Controllers\TagIndexController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\AdminMiddleware;
 
@@ -20,9 +24,11 @@ use App\Http\Middleware\AdminMiddleware;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/contact', [ContactController::class, 'index'])->name('contacts');
+Route::get('/article/{slug}', [HomeController::class, 'show'])->name('posts.single');
+Route::get('/category/{slug}', [CategoryIndexController::class, 'index'])->name('categories.single');
+Route::get('/tag/{slug}', [TagIndexController::class, 'index'])->name('tags.single');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::get('/', [MainController::class, 'index'])->name('admin.index');
