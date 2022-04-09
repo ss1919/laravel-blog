@@ -39,7 +39,7 @@
                     <div class="col-sm-12 col-md-5">
                         <div class="topbar-left">
                             <div class="topbar-text">
-                                Monday, March 22, 2020
+                                {{ date('l jS \of F Y') }}
                             </div>
                         </div>
                     </div>

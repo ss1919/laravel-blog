@@ -6,13 +6,15 @@
                     <h6 class="text-capitalize">search</h6>
                 </div>
                 <div class="widget__sidebar__body">
-                    <div class="input-group">
-                        <input type="text" name="search_term_string" class="form-control"
-                            placeholder="Search article . . .">
-                        <span class="input-group-btn">
-                            <button type="submit" class="btn-search btn"><i class="fa fa-search"></i></button>
-                        </span>
-                    </div>
+                    <form method="get" action="{{ route('search') }}">
+                        <div class="input-group">
+                            <input type="text" name="s" class="form-control @error('s') is-invalid @enderror"
+                                placeholder="Search article . . ." required>
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn-search btn"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                    </form>
                 </div>
 
             </div>

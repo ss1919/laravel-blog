@@ -10,6 +10,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CategoryIndexController;
 use App\Http\Controllers\TagIndexController;
+use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\AdminMiddleware;
 
@@ -29,6 +30,7 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contacts');
 Route::get('/article/{slug}', [HomeController::class, 'show'])->name('posts.single');
 Route::get('/category/{slug}', [CategoryIndexController::class, 'index'])->name('categories.single');
 Route::get('/tag/{slug}', [TagIndexController::class, 'index'])->name('tags.single');
+Route::get('/search', [SearchController::class, 'index'])->name('search');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::get('/', [MainController::class, 'index'])->name('admin.index');
